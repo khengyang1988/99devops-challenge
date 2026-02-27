@@ -2,6 +2,9 @@ Provide your CLI command here:
 
 grep '"symbol": "TSLA"' transaction-log.txt | grep '"side": "sell"' | grep -o '"order_id": "[^"]*"' | grep -o '[0-9]*' | xargs -I{} curl -s "https://example.com/api/{}" >> output.txt
 
+$ serve
+
+grep '"symbol": "TSLA"' transaction-log.txt | grep '"side": "sell"' | grep -o '"order_id": "[^"]*"' | grep -o '[0-9]*' | xargs -I{} curl -s "http://localhost:8081/api/{}" >> output.txt
 
 # Note:
 
