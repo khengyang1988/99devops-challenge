@@ -1,0 +1,3 @@
+-- removed ALTER SYSTEM SET max_connections = 20
+-- default postgres max_connections (100) is sufficient
+-- tune via postgres environment variables if needed
